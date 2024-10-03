@@ -1,9 +1,14 @@
-Para que o arquivo dasa_flask.py funcione é necessário rodar o flask com o seguinte comando: 
+1. Vá até o diretório do seu projeto no terminal
 
-"flask --app dasa_flask.py run"
+2. Construa a imagem Docker usando o seguinte comando:
+"docker-compose build"
 
-Em outra janela, depois de ativar o flask, é necessário rodar o seguinte comando:
+3. Inicie a aplicação Flask
+"docker-compose up"
 
+4. Com o Flask ativado e rodando vá para outra janela da sua linha de comando.
+
+5. Faça uma requisição curls para testar a API
 "curl -X POST http://127.0.0.1:5000/annotate \
     -H "Content-Type: application/json" \
     -d '{
