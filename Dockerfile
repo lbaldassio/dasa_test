@@ -9,7 +9,7 @@ COPY requirements.txt requirements.txt
 COPY dasa_flask.py dasa_flask.py
 
 ### Instala as dependências ###
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install Flask flask-restful
 RUN wget https://snpeff.blob.core.windows.net/versions/snpEff_latest_core.zip
 RUN unzip snpEff_latest_core.zip
 
